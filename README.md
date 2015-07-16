@@ -6,16 +6,21 @@
    ```
     CCLabelTTF* label = CCLabelTTF::create(title().c_str(), "Arial", 32);
     addChild(label, 1);
-    label->setPosition( ccp(VisibleRect::center().x, VisibleRect::top().y-50) );
+    label->setPosition( ccp(VisibleRect::center().x, VisibleRect::top().y-50) );    
+    
+    ```
     
 3.创建一个spring
      ```
     m_pBall = CCSprite::create("Images/ball.png");
     m_pBall->setPosition(ccp(VisibleRect::center().x, VisibleRect::center().y));
     addChild(m_pBall);
+    ```
+    
 4.获取舞台
- ```
+   ```
     CCDirector* pDir = CCDirector::sharedDirector();
+    ```
     
 5.获取内容的大小和位置
  ```
@@ -29,6 +34,8 @@
  ```
   setAccelerometerEnabled(true);
   void AccelerometerTest::didAccelerate(CCAcceleration* pAccelerationValue)
+  ```
+  
 8.创建一组菜单
  ```
  
@@ -44,7 +51,7 @@
     item3->setPosition(ccp(VisibleRect::center().x + item2->getContentSize().width*2, VisibleRect::bottom().y + item2->getContentSize().height/2));
     
     addChild(menu, 1);   
-    
+    ```
 9.
     
 
